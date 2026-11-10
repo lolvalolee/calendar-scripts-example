@@ -137,14 +137,14 @@ explicitly, add a temporary call under
 
 ## 6. Layout and naming
 
-- **One script = one file** in the repository root:
-  `check_habit_not_done_today.py`, `send_weekly_report.py`, ...
+- **One script = one `.py` file.** Where it lives does not matter: the root,
+  a subdirectory, any nesting — there is no restriction on the location.
 - **The file name is the script name** — the backend refers to it, so do not
   rename a file that is already in use without asking.
-- Grouping into subdirectories only when there are enough scripts to justify
-  it.
 - No shared helper modules until a concrete need appears: a script the backend
   runs must stay readable on its own.
+
+Examples: `check_habit_not_done_today.py`, `reports/send_weekly_report.py`.
 
 ---
 
